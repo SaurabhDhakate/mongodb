@@ -2,13 +2,18 @@ body {
   background-color: #c4f5d3;
 }
 
-h1 {
-    text-align: center;
-    background-color: #52ec80;
-    color: white;
-    font-style: italic;
-    padding: 10px;
-    border-radius: 10px;
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow:0px 10px 20px gray;
+}
+
+h1{
+  text-align: center;
+  color: #52ec80;
 }
 
 h5{
