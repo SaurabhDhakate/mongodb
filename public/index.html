@@ -13,7 +13,15 @@
 </head>
 
 <body>
-
+    <script>
+        function myFunc(){
+            document.getElementById('try').style.display='block';
+        }
+        function myClose(){
+            document.getElementById('try').style.display='none';
+        }
+    </script>
+    
     <div class="header">
         <h1>MongoDB-Project</h1>
     </div>
@@ -23,7 +31,7 @@
             <div style="padding: 10px;">
                 <label for="fname">Item Name</label>
                 <input type="text" id="iname" name="itemname" placeholder="Item name.."><br>
-                <button class="btn" style="background-color: rgb(250, 150, 56);">Get Data</button>
+                <button class="btn" onclick="myFunc()" style="background-color: rgb(250, 150, 56);">Get Data</button>
             </div>
             
         </div>
@@ -60,5 +68,10 @@
             </div>
         </div>
     </div>
-
+    <div id="try" class="try">
+        <div class="box" style="width: 310px;margin: auto;padding: 20px;">
+            <button onclick="myClose()">X</button>
+        </div>
+    </div>
+   
 </body>
